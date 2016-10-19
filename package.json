@@ -1,0 +1,22 @@
+{
+  "name": "remote-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for remote resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msn0/remote-loader.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msn0/remote-loader/issues"
+  },
+  "homepage": "https://github.com/msn0/remote-loader#readme",
+  "dependencies": {
+    "got": "^6.5.0"
+  }
+}
