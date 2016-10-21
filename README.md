@@ -1,5 +1,6 @@
 # remote-loader
 
+> (It doesn't work yet. Come back later)
 > Load remote resources with webpack
 
 ## Installation
