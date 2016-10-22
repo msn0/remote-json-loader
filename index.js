@@ -7,18 +7,18 @@ function requireFromString(src, filename) {
   return m.exports;
 }
 
-module.exports = function(source) {
-    this.cacheable();
-    var callback = this.async();
-    var query = this.query.slice(1);
-    var vendors = JSON.parse(source);
-    var that = this;
-    got(vendors[query])
-        .then(response => {
+module.exports = function (source) {
+  this.cacheable();
+  var callback = this.async();
+  var query = this.query.slice(1);
+  var vendors = JSON.parse(source);
+  var that = this;
+  got(vendors[query])
+    .then(response => {
 
-            console.log(requireFromString('module.exports = { test: 1}'));
+      console.log(requireFromString('module.exports = { test: 1}'));
 
-            // console.log(eval('module.exports = ' + response.body + ';'));
-            callback(null, 'module.exports = ' + response.body + ';');
-        });
+      // console.log(eval('module.exports = ' + response.body + ';'));
+      callback(null, 'module.exports = ' + response.body + ';');
+    });
 };
