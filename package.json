@@ -1,21 +1,21 @@
 {
-  "name": "remote-loader",
+  "name": "remote-json-loader",
   "version": "1.0.0",
-  "description": "Webpack loader for remote resources",
+  "description": "Webpack loader for remote JSONs",
   "main": "index.js",
   "scripts": {
     "test": "ava"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/msn0/remote-loader.git"
+    "url": "git+https://github.com/msn0/remote-json-loader.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/msn0/remote-loader/issues"
+    "url": "https://github.com/msn0/remote-json-loader/issues"
   },
-  "homepage": "https://github.com/msn0/remote-loader#readme",
+  "homepage": "https://github.com/msn0/remote-json-loader#readme",
   "dependencies": {
     "got": "^6.5.0"
   },
