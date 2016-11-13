@@ -1,4 +1,4 @@
-# remote-json-loader
+# remote-json-loader [![Build Status](https://travis-ci.org/msn0/remote-json-loader.svg?branch=master)](http://travis-ci.org/msn0/remote-json-loader)
 
 > webpack remote json loader
 
