@@ -8,14 +8,17 @@ npm i remote-json-loader --save-dev
 
 ## Usage
 
-```js
-import config from 'remote-json?app-config!./config.json';
-
+```json
 // config.json
 {
   "app-config": "http://my-website.ninja/config.json",
-  "ui-config": "http://my-website.ninja/interface-config.json"
+  "ui-config": "http://my-website.ninja/interface-config.json",
+  "package.json": "https://raw.githubusercontent.com/msn0/remote-json-loader/master/package.json"
 }
+```
+
+```js
+import config from 'remote-json?app-config!./config.json';
 ```
 
 ## License
