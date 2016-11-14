@@ -1,9 +1,12 @@
 {
   "name": "remote-json-loader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Load external JSON's with webpack",
   "keywords": [
-    "webpack", "loader", "json", "remote"
+    "webpack",
+    "loader",
+    "json",
+    "remote"
   ],
   "main": "index.js",
   "scripts": {
@@ -25,6 +28,7 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "babel-cli": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0"
+    "babel-preset-es2015": "^6.16.0",
+    "require-from-string": "^1.2.1"
   }
 }

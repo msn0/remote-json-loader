@@ -9,6 +9,6 @@ module.exports = function (source) {
 
   got(vendors[query])
     .then(response => {
-      callback(null, JSON.parse(response.body))
+      callback(null, `module.exports = ${response.body}`);
     });
 };
