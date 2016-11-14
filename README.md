@@ -13,12 +13,17 @@ npm i remote-json-loader --save-dev
 {
   "app-config": "http://my-website.ninja/config.json",
   "ui-config": "http://my-website.ninja/interface-config.json",
-  "package.json": "https://raw.githubusercontent.com/msn0/remote-json-loader/master/package.json"
+  "package": "https://raw.githubusercontent.com/msn0/remote-json-loader/master/package.json",
+  "whatever": "https://my-website.ninja/whatever.json"
 }
 ```
 
 ```js
-import config from 'remote-json?app-config!./config.json';
+import pkg from 'remote-json?package!./config.json';
+// or
+const pkg = require('remote-json?package!./config.json'); 
+
+console.log(pkg.name); // → remote-json-loader
 ```
 
 ## License
