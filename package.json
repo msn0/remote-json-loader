@@ -1,6 +1,6 @@
 {
   "name": "remote-json-loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Load external JSON's with webpack",
   "keywords": [
     "webpack", "loader", "json", "remote"
