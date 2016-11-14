@@ -4,12 +4,12 @@ const loader = require('../');
 test.cb('should load remote json', t => {
   loader.call({
     cacheable: () => {},
-    async: () => (a, Cow) => {
-      t.is(Cow[0].Barcode, '8077676562');
+    async: () => (a, pkg) => {
+      t.is(pkg.name, 'remote-json-loader');
       t.end();
     },
-    query: '?CowInCar'
+    query: '?package'
   }, JSON.stringify({
-    CowInCar: 'http://barcodefinder.com/search?q=8077676562&format=json'
+    package: 'https://raw.githubusercontent.com/msn0/remote-json-loader/master/package.json'
   }));
 });
